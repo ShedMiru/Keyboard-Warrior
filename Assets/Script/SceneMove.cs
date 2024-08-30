@@ -25,4 +25,14 @@ public class SceneMove : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void PauseMenu1()
+    {
+        SceneManager.LoadScene("PauseMenu1");
+    }
+
+    public void PauseMenu2()
+    {
+        SceneManager.LoadScene("PauseMenu2");
+    }
 }
