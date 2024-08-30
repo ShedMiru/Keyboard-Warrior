@@ -40,7 +40,7 @@ public class Movement : MonoBehaviour
         {
             rb.velocity = new Vector2(speed,0);
         }
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(new Vector2(rb.velocity.x, jump));
         }
