@@ -6,6 +6,8 @@ TagManager:
   tags:
   - MoveRoom2
   - MoveRoom1
+  - Ground
+  - PC1
   layers:
   - Default
   - TransparentFX

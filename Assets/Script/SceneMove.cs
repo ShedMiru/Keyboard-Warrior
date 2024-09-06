@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneMove : MonoBehaviour
 {
+    public GameObject ComingSoonWindow;
     // Start is called before the first frame update
     public void ToRoom1()
     {
@@ -18,21 +19,11 @@ public class SceneMove : MonoBehaviour
 
     public void ToComingSoon()
     {
-        SceneManager.LoadScene("ComingSoon");
+        GameObject CSW = (GameObject)Instantiate(ComingSoonWindow);
     }
 
     public void ToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
-    }
-
-    public void PauseMenu1()
-    {
-        SceneManager.LoadScene("PauseMenu1");
-    }
-
-    public void PauseMenu2()
-    {
-        SceneManager.LoadScene("PauseMenu2");
     }
 }
